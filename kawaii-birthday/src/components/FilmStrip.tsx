@@ -2,13 +2,13 @@ import { motion } from 'motion/react';
 
 export default function FilmStrip() {
   const items = [
-    { type: 'image', src: 'public/filmstrip1.jpeg' },
+    { type: 'image', src: '/filmstrip1.jpeg' },
     { type: 'pattern', pattern: 'bg-stripes' },
-    { type: 'image', src: 'public/filmstrip2.jpeg' },
+    { type: 'image', src: '/filmstrip2.jpeg' },
     { type: 'pattern', pattern: 'bg-dots' },
-    { type: 'image', src: 'public/filmstrip3.jpeg' },
+    { type: 'image', src: '/filmstrip3.jpeg' },
     { type: 'pattern', pattern: 'bg-checkers' },
-    { type: 'image', src: 'public/filmstrip4.jpeg' },
+    { type: 'image', src: '/filmstrip4.jpeg' },
   ];
 
   return (

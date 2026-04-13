@@ -2,10 +2,10 @@ import { useState } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 
 const buttons = [
-  { id: 1, label: "DO NOT PRESS", img: "public/lol1.jpeg", caption: "The look of DISPAIR!!" },
-  { id: 2, label: "RESTRICTED", img: "public/lol2.jpeg", caption: "PAPARAZI MOMENT" },
-  { id: 3, label: "CLASSIFIED", img: "public/lol3.jpeg", caption: "Sassy..." },
-  { id: 4, label: "DANGER", img: "public/lol4.mp4", caption: "This one is cute tho!" },
+  { id: 1, label: "DO NOT PRESS", img: "/lol1.jpeg", caption: "The look of DISPAIR!!" },
+  { id: 2, label: "RESTRICTED", img: "/lol2.jpeg", caption: "PAPARAZI MOMENT" },
+  { id: 3, label: "CLASSIFIED", img: "/lol3.jpeg", caption: "Sassy..." },
+  { id: 4, label: "DANGER", img: "/lol4.mp4", caption: "This one is cute tho!" },
 ];
 
 export default function EmbarrassingGrid() {
