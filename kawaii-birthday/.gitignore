@@ -6,3 +6,8 @@ coverage/
 *.log
 .env*
 !.env.example
+
+# Large video files - store locally, use small versions for deployment
+public/lol4.mp4
+public/premier.mp4
+public/*.mp4.bak

@@ -5,6 +5,7 @@ import Sidebar from './Sidebar';
 import Cake from './Cake';
 import BeautifulMessage from './BeautifulMessage';
 import EvidenceBoard from './EvidenceBoard';
+import MoviePremiere from './MoviePremiere';
 import EmbarrassingGrid from './EmbarrassingGrid';
 import RetroBackground from './RetroBackground';
 
@@ -83,6 +84,9 @@ export default function MainContent() {
           </div>
           <EvidenceBoard />
         </section>
+
+        {/* MOVIE PREMIERE SECTION */}
+        <MoviePremiere />
 
         {/* RESTRICTED ACCESS SECTION */}
         <section className="relative flex min-h-screen flex-col items-center justify-center p-8 md:p-16 bg-cherry border-t-[12px] border-black rounded-t-[6rem] mt-24 shadow-[0_-20px_50px_rgba(210,18,46,0.3)]">

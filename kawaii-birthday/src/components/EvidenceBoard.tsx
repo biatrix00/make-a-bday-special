@@ -41,13 +41,21 @@ export default function EvidenceBoard() {
         >
           <div className="relative overflow-hidden rounded-lg">
             <div className="absolute inset-0 bg-cherry/10 mix-blend-overlay opacity-50 group-hover/photo:opacity-0 transition-opacity duration-500"></div>
-            <img
-              src={p.src}
-              alt={`Exhibit ${String.fromCharCode(65 + i)}`}
-              className="w-28 h-28 sm:w-40 sm:h-40 md:w-64 md:h-64 object-cover pointer-events-none grayscale group-hover/photo:grayscale-0 transition-all duration-700"
-              loading="lazy"
-              decoding="async"
-            />
+            {p.src.endsWith('.mp4') ? (
+              <video
+                src={p.src}
+                controls
+                className="w-28 h-28 sm:w-40 sm:h-40 md:w-64 md:h-64 object-cover pointer-events-auto group-hover/photo:grayscale-0 transition-all duration-700"
+              />
+            ) : (
+              <img
+                src={p.src}
+                alt={`Exhibit ${String.fromCharCode(65 + i)}`}
+                className="w-28 h-28 sm:w-40 sm:h-40 md:w-64 md:h-64 object-cover pointer-events-none grayscale group-hover/photo:grayscale-0 transition-all duration-700"
+                loading="lazy"
+                decoding="async"
+              />
+            )}
           </div>
           <div className="absolute bottom-3 md:bottom-6 left-0 w-full text-center">
             <div className="font-cursive text-lg md:text-3xl font-black text-black/80">Exhibit {String.fromCharCode(65 + i)}</div>

@@ -1,0 +1,6 @@
+{
+  "buildCommand": "cd kawaii-birthday && npm install && npm run build",
+  "outputDirectory": "kawaii-birthday/dist",
+  "devCommand": "cd kawaii-birthday && npm run dev",
+  "installCommand": "npm install -g pnpm && pnpm install --recursive"
+}
